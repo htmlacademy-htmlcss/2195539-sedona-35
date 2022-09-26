@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Roman Golubev](https://up.htmlacademy.ru/htmlcss/35/user/2195539).
-* Наставник: `Виктор Рыбаков`. (https://htmlacademy.ru/profile/viktor-rybakov)
+* Наставник: [Виктор Рыбаков] (https://htmlacademy.ru/profile/viktor-rybakov).
 
 ---
 
