@@ -170,16 +170,22 @@ ul {
 }
 
 /* filter-catalog */
-.inner-header-title {
+.catalog-header-background {
   color: #ffffff;
   background-color: #000000;
   background-image: url(../images/filter.jpg);
-  background-size: 100% auto;
+  background-size: auto;
   background-repeat: no-repeat;
 }
 
-.hotel-card-list {
-
+/* catalog-hotels */
+.catalog-header {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  text-decoration: none;
 }
 
 /* Hidden
