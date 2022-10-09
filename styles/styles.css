@@ -14,42 +14,45 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
-  font-display: swap;
-}
-
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #F2F2F2;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
   list-style: none;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /* Pages */
 .page-header {
-  color: #000000;
   background-color: #ffffff;
 }
-
 .navigation-link {
   color: #000000;
   font-size: 20px;
@@ -71,7 +74,11 @@ ul {
 
 /* Hero */
 .hero {
-  background-image: url(../images/index-background.jpg);
+  background-color: #82B3D3;
+  background-image: url(../images/divider.svg), url(../images/index-background.jpg);
+  width: 1200px;
+  height: 485px;
+  background-position: bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -109,7 +116,7 @@ ul {
 /* Subscribe */
 .subscribe {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #82B3D3;
   text-decoration: none;
   background-image: url(../images/subscribe.jpg);
   background-size: 100% auto;
@@ -123,6 +130,7 @@ ul {
   text-decoration: none;
 }
 
+/* footer-phone-animation */
 .footer-phone-number {
   color: #000000;
   font-size: 40px;
@@ -131,34 +139,29 @@ ul {
   text-align: center;
   text-decoration: none;
 }
-
 .footer-phone-number:hover {
   color: #756157;
   text-decoration: none;
 }
-
 .footer-phone-number:focus {
   color: #756157;
   text-decoration: none;
 }
-
 .footer-phone-number:active {
   color: rgba(117, 97, 87, 0.3);
   text-decoration: none;
 }
 
+/* footer-logo-animation */
 .footer-contacts-logo svg {
   fill: #000000;
 }
-
 .footer-contacts-logo:hover svg {
   fill: #756157;
 }
-
 .footer-contacts-logo:focus svg {
   fill: #756157;
 }
-
 .footer-contacts-logo:active svg {
   fill: rgba(117, 97, 87, 0.3);
 }
@@ -173,7 +176,7 @@ ul {
 /* filter-catalog */
 .catalog-header-background {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #82B3D3;
   background-image: url(../images/filter.jpg);
   background-size: auto;
   background-repeat: no-repeat;
@@ -190,7 +193,7 @@ ul {
   text-decoration: none;
 }
 
-/* Hidden
+/* Hidden*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -203,4 +206,3 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-*/
