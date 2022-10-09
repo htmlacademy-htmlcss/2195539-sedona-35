@@ -64,6 +64,23 @@ p {
   text-transform: capitalize;
 }
 
+.button-navigation {
+  background-color: #756157;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-bottom: 8px;
+  margin: 96px;
+  border: 1px solid;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
 /* Main index*/
 .main-index {
   color: #000000;
@@ -83,17 +100,30 @@ p {
   background-repeat: no-repeat;
 }
 
+.hero-sedona {
+  padding-top: 51px;
+  padding-bottom: 82px;
+  padding-left: 371px;
+  padding-right: 371px;
+}
+
 .hero-description {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 69px;
+  padding-bottom: 25px;
+  padding-left: 290px;
+  padding-right: 290px;
 }
 
 .hero-description-small {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
+  padding-bottom: 90px;
+
 }
 
 /* Advantages */
@@ -102,6 +132,10 @@ p {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 92px;
+  padding-left: 112px;
+  padding-right: 112px;
+  padding-bottom: 62px;
 }
 
 /* search */
@@ -110,8 +144,27 @@ p {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 96px;
+  padding-left: 304px;
+  padding-right: 304px;
+  padding-bottom: 20px;
 }
 
+.search-button {
+  background-color: #756157;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 8px;
+  margin: 96px;
+  border: 1px solid;
+  border-radius: 4px;
+}
 
 /* Subscribe */
 .subscribe {
@@ -119,6 +172,8 @@ p {
   background-color: #82B3D3;
   text-decoration: none;
   background-image: url(../images/subscribe.jpg);
+  width: 1200px;
+  height: 415px;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -178,6 +233,8 @@ p {
   color: #ffffff;
   background-color: #82B3D3;
   background-image: url(../images/filter.jpg);
+  width: 1200px;
+  height: 476px;
   background-size: auto;
   background-repeat: no-repeat;
 }
