@@ -129,16 +129,22 @@ p {
 }
 
 /* Advantages */
+.advantages-item {
+  width:230px;
+  height: 181px;
+  }
+
 .advantages-header {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 92px;
-  padding-left: 112px;
-  padding-right: 112px;
-  padding-bottom: 62px;
-}
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 30px;
+  border-bottom: solid rgba(255, 255, 255, 0.3);
+  }
 
 /* search */
 .search-header {
@@ -177,14 +183,16 @@ padding-bottom: 54px;
 
 /* Subscribe */
 .subscribe {
+  width: 1200px;
+  height: 415px;
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
   background-image: url(../images/subscribe.jpg);
-  width: 1200px;
-  height: 415px;
+  background-position-y: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 .subscribe-header {
@@ -305,7 +313,7 @@ padding-bottom: 54px;
   text-decoration: none;
 }
 
-/* Hidden
+/* Hidden*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -318,4 +326,3 @@ padding-bottom: 54px;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-*/
