@@ -49,10 +49,12 @@ p {
   padding: 0;
 }
 
+
 /* Pages */
 .page-header {
   background-color: #ffffff;
 }
+
 .navigation-link {
   color: #000000;
   font-size: 20px;
@@ -150,6 +152,13 @@ p {
   padding-bottom: 20px;
 }
 
+.search-description {
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+padding-bottom: 54px;
+}
+
 .search-button {
   background-color: #756157;
   color: #ffffff;
@@ -161,9 +170,9 @@ p {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 8px;
-  margin: 96px;
   border: 1px solid;
   border-radius: 4px;
+  margin-bottom: 96px;
 }
 
 /* Subscribe */
@@ -178,11 +187,57 @@ p {
   background-repeat: no-repeat;
 }
 
+.subscribe-header {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  padding-top: 96px;
+  padding-left: 398px;
+  padding-right: 398px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.subscribe-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  padding-left: 105px;
+  padding-right: 105px;
+  padding-bottom: 54px;
+}
+
 /* footer */
 .page-footer {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
+}
+
+.subscribe-email {
+  width: 452px;
+  height: 52px;
+  border: 0 ;
+  border-radius: 4px 0px 0px 4px;
+  margin-bottom: 104px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 20px;
+}
+
+.subscribe-button {
+  width: 232px;
+  height: 52px;
+  background-color: #82B3D3;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 0px 4px 4px 0px;
+  margin-bottom: 104px;
 }
 
 /* footer-phone-animation */
@@ -250,7 +305,7 @@ p {
   text-decoration: none;
 }
 
-/* Hidden*/
+/* Hidden
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -263,3 +318,4 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+*/
