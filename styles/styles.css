@@ -14,13 +14,25 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #f2f2f2;
   margin: 0;
+  min-height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
 }
 
 ul {
@@ -29,9 +41,61 @@ ul {
 
 /* --------------Index---------------------- */
 
-/* Pages */
+/* Pages navigation */
 .page-header {
   background-color: #ffffff;
+  height: 64px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1060px;
+  height: 64px;
+  margin: 0 auto;
+  padding-top: 0;
+}
+
+.navigation-item {
+  padding: 20px 16px;
+}
+
+.navigation-logo {
+  margin-bottom: -20px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 550px;
+  margin: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navigation-link-current {
+  border-bottom: 2px solid #756157;
+  padding-bottom: 20px;
+}
+
+.navigation-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 310px;
+  margin-left: 0;
+}
+
+.navigation-search {
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 20px;
 }
 
 .navigation-link {
@@ -43,16 +107,7 @@ ul {
   vertical-align: top;
   text-decoration: none;
   text-transform: capitalize;
-}
 
-.navigation-heart {
-  background-image: url(../images/heart.svg);
-  background-repeat: no-repeat;
-}
-
-.navigation-search {
-  background-image: url(../images/search.svg);
-  background-repeat: no-repeat;
 }
 
 .button-navigation {
@@ -66,8 +121,7 @@ ul {
   padding-left: 34px;
   padding-right: 34px;
   padding-bottom: 8px;
-  margin: 96px;
-  border: 1px solid;
+  border: none;
   border-radius: 4px;
   text-decoration: none;
 }
@@ -77,11 +131,18 @@ ul {
   color: #000000;
   background-color: #ffffff;
   text-align: center;
-  vertical-align: top;
 }
+
+.main-container {
+  flex-grow: 1;
+  align-items: center;
+}
+
 
 /* Hero */
 .hero {
+  display: flex;
+  flex-direction: column;
   background-color: #82b3d3;
   background-image: url(../images/divider.svg),
     url(../images/index-background.jpg);
@@ -91,7 +152,8 @@ ul {
 }
 
 .hero-message {
-  background-position: top;
+  margin-top: 50px;
+  margin-bottom: 80px;
 }
 
 .hero-description {
@@ -110,6 +172,19 @@ ul {
 /* Advantages */
 .advantages {
   background-color: rgba(131, 179, 211, 0.12);
+  text-align: center;
+}
+
+.advantages-list-above {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-auto-rows: minmax(384px, auto);
+  grid-template-areas: 'advantages-city advantages-img advantages-img'
+    'advantages-square advantages-road  advantages-turist'
+    'advantages-turist-mountain advantages-turist-mountain advantages-bridge'
+    'advantages-home advantages-food advantages-gift';
 }
 
 .advantages-header {
@@ -117,26 +192,70 @@ ul {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.line-blue {
+  width: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 85px;
+  margin-right: 85px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.line-grey {
+  width: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 85px;
+  margin-right: 85px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.advantages-item {
+  padding-top: 92px;
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
 .advantages-city {
+  color: #ffffff;
   background-color: #82b3d3;
+  grid-area: advantages-city;
+
 }
 
 .advantages-road {
   background: rgba(131, 179, 211, 0.2);
+  grid-area: advantages-road;
 }
 
 .advantages-bridge {
+  color: #ffffff;
   background-color: #82b3d3;
+  grid-area: advantages-bridge;
+}
+
+.dvantages-city-home {
+  grid-area: dvantages-city-home;
+}
+
+.advantages-turist-mountain {
+  grid-area: advantages-turist-mountain;
+}
+
+.advantages-home {
+  grid-area: advantages-home;
 }
 
 .advantages-food {
   background-color: #ffffff;
+  grid-area: advantages-food;
 }
 
-advantages-additional {
-  background-color: rgba(131, 179, 211, 0.12);
+advantages-gift {
+  grid-area: advantages-gift;
 }
 
 /* search */
@@ -146,16 +265,18 @@ advantages-additional {
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 96px;
-  padding-left: 304px;
-  padding-right: 304px;
-  padding-bottom: 20px;
+  margin: 0;
 }
 
 .search-description {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  padding-top: 20px;
   padding-bottom: 54px;
+  padding-left: 304px;
+  padding-right: 304px;
+  margin: 0;
 }
 
 .search-button {
@@ -176,15 +297,13 @@ advantages-additional {
 
 /* Subscribe */
 .subscribe {
-
   color: #ffffff;
   background-color: #82b3d3;
   text-decoration: none;
   background-image: url(../images/subscribe.jpg);
-  background-position-y: center;
-  background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+  background-size: cover;
 }
 
 .subscribe-header {
@@ -192,27 +311,24 @@ advantages-additional {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  padding-top: 96px;
+  margin: 0;
 }
 
 .subscribe-description {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-}
-
-/* footer */
-.page-footer {
-  color: #000000;
-  background-color: #ffffff;
-  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 54px;
+  margin: 0;
 }
 
 .subscribe-email {
   width: 452px;
   height: 52px;
   border: 0;
-  border-radius: 4px 0px 0px 4px;
-  margin-bottom: 104px;
+  border-radius: 4px 4px;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -229,27 +345,46 @@ advantages-additional {
   line-height: 36px;
   text-transform: uppercase;
   border: 0;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 4px 4px;
   margin-bottom: 104px;
 }
 
+/* footer */
+.page-footer {
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
 /* footer-phone-animation */
-.footer-phone-number {
+
+.contacts-phone {
   color: #000000;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
   text-align: center;
+  font-style: normal;
   text-decoration: none;
 }
+
 .footer-phone-number:hover {
   color: #756157;
   text-decoration: none;
 }
+
 .footer-phone-number:focus {
   color: #756157;
   text-decoration: none;
 }
+
 .footer-phone-number:active {
   color: rgba(117, 97, 87, 0.3);
   text-decoration: none;
@@ -259,25 +394,77 @@ advantages-additional {
 .footer-contacts-logo svg {
   fill: #000000;
 }
+
 .footer-contacts-logo:hover svg {
   fill: #756157;
 }
+
 .footer-contacts-logo:focus svg {
   fill: #756157;
 }
+
 .footer-contacts-logo:active svg {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-/* filter-catalog */
-.catalog-header-background {
-  color: #ffffff;
-  background-color: #82b3d3;
-  background-image: url(../images/filter.jpg);
-  height: 476px;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+/* VK-animation */
+.vkontakte-button svg {
+  fill: #83B3D3;
 }
+
+.vkontakte-button:hover svg {
+  fill: #68A2CA;
+}
+
+.vkontakte-button:focus svg {
+  fill: #68A2CA;
+}
+
+.vkontakte-button:active svg {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+/* Telegram-animation */
+.telegram-button svg {
+  fill: #83B3D3;
+}
+
+.telegram-button:hover svg {
+  fill: #68A2CA;
+}
+
+.telegram-button:focus svg {
+  fill: #68A2CA;
+}
+
+.telegram-button:active svg {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+/* Youtube-animation */
+.youtube-button svg {
+  fill: #83B3D3;
+}
+
+.youtube-button:hover svg {
+  fill: #68A2CA;
+}
+
+.youtube-button:focus svg {
+  fill: #68A2CA;
+}
+
+.youtube-button:active svg {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.footer-social-list {
+ display: flex;
+ justify-content: space-between;
+ width: 142px;
+}
+
+
 
 /* Hidden*/
 .visually-hidden {
@@ -293,13 +480,12 @@ advantages-additional {
   overflow: hidden;
 }
 
-/* --------------Catalog----------------- */
+/* ------------------------Catalog--------------------------- */
 
 /* Main catalog*/
 .main-inner {
   color: #000000;
   background-color: #ffffff;
-
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -309,7 +495,13 @@ advantages-additional {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  text-transform: uppercase;
+  margin: 0;
+  ;
+}
+
+.page-container {
+  width: 1060px;
+  margin: 0 auto;
 }
 
 /* Breadcrumbs */
@@ -334,6 +526,18 @@ advantages-additional {
   font-size: 20px;
   line-height: 24px;
 }
+
+/* filter-catalog */
+.catalog-header-background {
+  color: #ffffff;
+  background-color: #82b3d3;
+  background-image: url(../images/filter.jpg);
+  height: 476px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 
 .sorting-container {
   color: #000000;
@@ -404,7 +608,7 @@ advantages-additional {
 }
 
 .button-favorite-current {
-  background-color: #7DB54F;
+  background-color: #7db54f;
   color: #ffffff;
   text-align: center;
   font-weight: 700;
@@ -422,7 +626,7 @@ advantages-additional {
 }
 
 .button-rate {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #333333;
   text-align: center;
   font-style: normal;
@@ -434,7 +638,7 @@ advantages-additional {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 8px;
-  border: 1px ;
+  border: 1px;
   border-radius: 4px;
   text-decoration: none;
 }
@@ -454,7 +658,7 @@ advantages-additional {
 }
 
 .button-stars-two {
- width: 140px;
+  width: 140px;
   height: 37px;
   background-image: url(../images/two_stars.svg);
   background-repeat: no-repeat;
@@ -471,25 +675,52 @@ advantages-additional {
   text-decoration: none;
 }
 
-
 /* Link */
-.pagination {
+.pagination-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 660px;
   background-color: #ffffff;
-}
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  }
 
 .pagination-link {
   color: #ffffff;
   background-color: #82b3d3;
   text-decoration: none;
-  line-height: 16px;
-  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  padding: 23px;
 }
 
 .pagination-current {
   color: #ffffff;
-  background-color:#F2F2F2
+  background-color: #f2f2f2;
+  padding: 23px;
+  border-radius: 4px;
 }
 
-.pagination-disabled {
+.pagination-dote {
   background-color: #ffffff;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  border: none;
+  border-radius: 4px;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-bottom: 23px;
+      }
+
+.line-bottom {
+  width: 1060px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-bottom: 1px solid #E6E6E6;
 }
