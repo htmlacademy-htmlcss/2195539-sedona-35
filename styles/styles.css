@@ -89,6 +89,7 @@ ul {
   flex-direction: row;
   align-items: center;
   max-width: 310px;
+  gap: 20px;
   padding: 0;
   margin: 0;
 }
@@ -111,7 +112,19 @@ ul {
   vertical-align: top;
   text-decoration: none;
   text-transform: capitalize;
+}
 
+.navigation-link-like {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  background: #7db54f;
+  clip-path: circle(46%);
+  color: #fff;
+  position: relative;
+  top: -15px;
+  right: 11px;
+  padding: 3px;
 }
 
 .button-navigation {
@@ -142,12 +155,11 @@ ul {
   align-items: center;
 }
 
-
 /* Hero */
 .hero-message {
   display: flex;
   flex-direction: column;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   background-image: url(../images/divider.svg),
     url(../images/index-background.jpg);
   background-position: bottom, top;
@@ -188,7 +200,6 @@ ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .advantages-container {
@@ -218,7 +229,7 @@ ul {
 .advantages-city {
   color: #ffffff;
   display: flex;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .advantages-square {
@@ -242,7 +253,7 @@ ul {
 .advantages-bridge {
   color: #ffffff;
   display: flex;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .advantages-home {
@@ -432,15 +443,15 @@ ul {
 
 /* VK-animation */
 .vkontakte-button svg {
-  fill: #83B3D3;
+  fill: #83b3d3;
 }
 
 .vkontakte-button:hover svg {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .vkontakte-button:focus svg {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .vkontakte-button:active svg {
@@ -449,15 +460,15 @@ ul {
 
 /* Telegram-animation */
 .telegram-button svg {
-  fill: #83B3D3;
+  fill: #83b3d3;
 }
 
 .telegram-button:hover svg {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .telegram-button:focus svg {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .telegram-button:active svg {
@@ -466,15 +477,15 @@ ul {
 
 /* Youtube-animation */
 .youtube-button svg {
-  fill: #83B3D3;
+  fill: #83b3d3;
 }
 
 .youtube-button:hover svg {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .youtube-button:focus svg {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .youtube-button:active svg {
@@ -486,8 +497,6 @@ ul {
   justify-content: space-between;
   width: 142px;
 }
-
-
 
 /* Hidden*/
 .visually-hidden {
@@ -513,8 +522,6 @@ ul {
   font-size: 18px;
   line-height: 23px;
 }
-
-
 
 .page-container {
   width: 1060px;
@@ -563,7 +570,7 @@ ul {
 
 .catalog-header-background {
   color: #ffffff;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   background-image: url(../images/filter.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -614,7 +621,7 @@ ul {
 .control-min {
   width: 143px;
   height: 48px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
   font-weight: 700;
   font-size: 18px;
@@ -625,7 +632,7 @@ ul {
 .control-max {
   width: 143px;
   height: 48px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 0 4px 4px 0;
   font-weight: 700;
   font-size: 18px;
@@ -671,7 +678,6 @@ ul {
   background-color: inherit;
 }
 
-
 /* catalog-header */
 
 .catalog-hearder-container {
@@ -695,13 +701,12 @@ ul {
   height: 48px;
   font-size: 18px;
   line-height: 21px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   padding-left: 20px;
   padding-right: 131px;
   margin-right: 72px;
 }
-
 
 .button-grid {
   background-image: url(../images/grid.svg);
@@ -713,7 +718,7 @@ ul {
   border: 2px solid #000000;
   border-radius: 4px;
   margin: 0;
-  vertical-align: top
+  vertical-align: top;
 }
 
 .button-one {
@@ -723,10 +728,10 @@ ul {
   background-color: #ffffff;
   width: 48px;
   height: 48px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   margin: 0;
-  vertical-align: top
+  vertical-align: top;
 }
 
 .button-list {
@@ -736,7 +741,7 @@ ul {
   background-color: #ffffff;
   width: 48px;
   height: 48px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   vertical-align: top;
 }
@@ -765,7 +770,7 @@ ul {
 .hotel-card-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
   padding-left: 0;
   margin: 0;
 }
@@ -775,7 +780,7 @@ ul {
 }
 
 .hotel-card-item {
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 20px;
 }
@@ -882,7 +887,6 @@ ul {
   background-repeat: no-repeat;
   margin: 0;
 }
-
 
 /* Paggination */
 .pagination {
