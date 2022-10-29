@@ -73,10 +73,8 @@
 
 
     <main class="main-container main-inner" data-test="main">
-      <div class="filter-container ">
       <section class="filter catalog-header-background">
       <h2 class="visually-hidden">Фильтр по гостиницам</h2>
-
 
       <header class="inner-header-title ">
         <h1 class="main-inner-header">Гостиницы Седоны</h1>
@@ -148,20 +146,19 @@
             <fieldset class="filter-price">
               <legend class="filter-legend">Стоимость, ₽:</legend>
 
-              <div>
-                <label >
-                  <input class="control-min" type="number" name="min" value="0" placeholder="от" >
-                </label>
+              <div class="filter-number">
+                <label class="control-label" for="label-min">от</label>
+                  <input class="control-min" type="number" name="min" value="0" id="label-min">
               </div>
 
               <div class="filter-number">
-                <label>
-                  <input class="control-max" type="number" name="max" value="9000" placeholder="до">
-                </label>
+                <label class="control-label" for="label-max">до</label>
+                  <input class="control-max" type="number" name="max" value="9000" id="label-max">
               </div>
 
-              <div>
-              <input class="price-slide" type="range" min="0" max="9000" value="7000">
+              <div >
+              <label for="label-range"></label>
+              <input class="price-slide" type="range" min="0" max="9000" value="7000" id="label-range">
               </div>
             </fieldset>
 
@@ -169,13 +166,10 @@
             <button class="filter-button-submit" type="submit">Применить</button>
             <button class="filter-button-reset" type="reset">Сбросить</button>
             </div>
-
           </form>
         </section>
-
-      </div>
       <section class="catalog">
-        <div class="catalog-hearder-container">
+        <div class="catalog-header-container">
         <h2 class="sorting-header"> Найдено гостиниц: <span class="sorting-number">38</span></h2>
         <header>
           <h3 class="visually-hidden">Сортировка гостиниц</h3>
@@ -200,8 +194,8 @@
               <p class="product-price">От 4000 ₽</p>
               <a class="button-info" href="#">ПОДРОБНЕЕ</a>
               <button class="button-favorite" type="button">В ИЗБРАННОЕ</button>
-              <p class="button-stars-four"><span class="visually-hidden">Четыре звезды</span></p>
-              <span class="button-rate">РЕЙТИНГ: 8,5</span>
+              <p class="button-stars-four"><span class=" visually-hidden">Четыре звезды</span></p>
+              <p><span class="button-rate">РЕЙТИНГ: 8,5</span></p>
               </div>
 
           </li>
