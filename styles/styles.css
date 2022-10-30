@@ -208,13 +208,60 @@ ul {
 }
 
 .advantages-container {
-  padding-top: 103px;
+  padding-top: 92px;
   padding-left: 85px;
   padding-right: 85px;
-  padding-bottom: 121px;
-}
+  padding-bottom: 110px;
+  }
 
 .advantages-header {
+  position: relative;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages-header::before {
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+  bottom: -30px;
+  left: 50%;
+  margin-left: -25px;
+  }
+
+  .advantages-header-white {
+    position: relative;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advantages-header-white::before {
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    content: "";
+    bottom: -30px;
+    left: 50%;
+    margin-left: -25px;
+    }
+.advantages-header-plus {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -224,12 +271,11 @@ ul {
 }
 
 .advantages-description {
-  font-size: 18px;
+   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   margin: 0;
-  padding-top: 40px;
-}
+ }
 
 .advantages-city {
   color: #ffffff;
@@ -276,6 +322,10 @@ ul {
 }
 
 .advantages-container-plus {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
   padding-top: 80px;
   padding-left: 85px;
   padding-right: 85px;
@@ -322,6 +372,7 @@ ul {
   padding-bottom: 8px;
   border: 1px solid;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /* Subscribe */
@@ -380,7 +431,7 @@ ul {
   text-transform: uppercase;
   border: none;
   border-radius: 0 4px 4px 0;
-
+  cursor: pointer;
   margin-right: auto;
 }
 
@@ -635,6 +686,27 @@ ul {
   flex-direction: column;
   gap: 10px;
 }
+/* check-box */
+
+.control-input {
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+
+
+
+
+
+/* radio */
+
+.control-radio {
+  width: 20px;
+  height: 20px;
+}
+
+/* price */
 
 .control-label {
   position: absolute;
@@ -689,6 +761,7 @@ ul {
   text-transform: uppercase;
   border: 0;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .filter-button-reset {
@@ -702,6 +775,7 @@ ul {
   text-transform: uppercase;
   border: none;
   background-color: inherit;
+  cursor: pointer;
 }
 
 /* catalog-header */
@@ -745,6 +819,7 @@ ul {
   border-radius: 4px;
   margin: 0;
   vertical-align: top;
+  cursor: pointer;
 }
 
 .button-one {
@@ -758,6 +833,7 @@ ul {
   border-radius: 4px;
   margin: 0;
   vertical-align: top;
+  cursor: pointer;
 }
 
 .button-list {
@@ -770,7 +846,8 @@ ul {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   vertical-align: top;
-}
+  cursor: pointer;
+  }
 
 /* Catalog-cards */
 
@@ -779,7 +856,7 @@ ul {
   gap: 10px;
   grid-template-columns: 142px 142px;
   justify-content: start;
-}
+  }
 
 .catalog-header {
   color: #000000;
@@ -799,6 +876,7 @@ ul {
   gap: 20px;
   padding-left: 0;
   margin: 0;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-card-link {
@@ -809,6 +887,7 @@ ul {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 19px;
+  margin-bottom: 30px;
 }
 
 .product-name {
@@ -853,6 +932,7 @@ ul {
   border-radius: 4px;
   text-decoration: none;
   margin: 0;
+  cursor: pointer;
 }
 
 .button-favorite-current {
@@ -870,6 +950,7 @@ ul {
   border-radius: 4px;
   text-decoration: none;
   margin: 0;
+  cursor: pointer;
 }
 
 .button-rate {
@@ -916,7 +997,7 @@ ul {
 
 /* Pagination */
 .pagination {
-  margin: 0;
+margin-top: 30px;
 }
 
 .pagination-list {
@@ -929,7 +1010,6 @@ ul {
   line-height: 36px;
   font-weight: 700;
   padding-left: 0;
-  padding-bottom: 60px;
   vertical-align: top;
   margin: 0;
   align-items: center;
@@ -956,7 +1036,6 @@ ul {
   color: #ffffff;
   background-color: #f2f2f2;
   border-radius: 4px;
-  margin-left: 70px;
   height: 60px;
   min-width: 60px;
   text-align: center;
