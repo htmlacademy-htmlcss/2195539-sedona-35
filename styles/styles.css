@@ -793,19 +793,16 @@ ul {
 .control{
   transition: background-color 0.2s;
 }
-
 .control:hover {
   opacity: 0.6;
   text-decoration: none;
 }
-
 .control:focus {
   outline: none;
   border: 2px solid #83B3D3;
   border-radius: 4px;
   text-decoration: none;
 }
-
 .control:active {
   outline: none;
   color: rgba(255, 255, 255, 0.3);
@@ -827,7 +824,6 @@ ul {
   top: 15px;
   left: 120px;
 }
-
 .control-min {
   width: 143px;
   height: 48px;
@@ -838,7 +834,7 @@ ul {
   line-height: 24px;
   padding-left: 20px;
   padding-right: 5px;
-  border: 1px solid;
+  border: 2px solid;
 }
 
 .control-min:focus {
@@ -863,7 +859,7 @@ ul {
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
-  border: 1px solid;
+  border: 2px solid;
 }
 
 .control-max:focus {
@@ -878,13 +874,6 @@ ul {
   border: 2px solid #000000;
   text-decoration: none;
 }
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-
-
 .range-input {
   width: 340px;
   margin-top: 36px;
