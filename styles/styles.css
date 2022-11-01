@@ -838,6 +838,20 @@ ul {
   line-height: 24px;
   padding-left: 20px;
   padding-right: 5px;
+  border: 1px solid;
+}
+
+.control-min:focus {
+  outline: none;
+  border: 2px solid #83B3D3;
+  border-radius: 4px 0 0 4px;
+  text-decoration: none;
+}
+
+.control-min:active {
+  outline: none;
+  border: 2px solid #000000;
+  text-decoration: none;
 }
 
 .control-max {
@@ -849,7 +863,27 @@ ul {
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
+  border: 1px solid;
 }
+
+.control-max:focus {
+  outline: none;
+  border: 2px solid #83B3D3;
+  border-radius: 0 4px 4px 0;
+  text-decoration: none;
+}
+
+.control-max:active {
+  outline: none;
+  border: 2px solid #000000;
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 
 .range-input {
   width: 340px;
