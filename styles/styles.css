@@ -128,6 +128,13 @@ ul {
   padding: 3px;
 }
 
+.navigation-link-search:hover svg {
+  opacity: 50%;
+}
+.navigation-link-heart:hover svg {
+  opacity: 50%;
+}
+
 .button-navigation {
   background-color: #756157;
   color: #ffffff;
@@ -142,6 +149,7 @@ ul {
   border: none;
   border-radius: 4px;
   text-decoration: none;
+  font-family: "PT Sans";
 }
 
 .button-navigation {
@@ -396,6 +404,7 @@ ul {
   border: 1px solid;
   border-radius: 4px;
   cursor: pointer;
+  font-family: "PT Sans";
 }
 
 .search-button {
@@ -470,6 +479,7 @@ ul {
   line-height: 24px;
   padding-left: 20px;
   margin-left: auto;
+  font-family: "PT Sans";
 }
 
 .subscribe-button {
@@ -485,6 +495,7 @@ ul {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   margin-right: auto;
+  font-family: "PT Sans";
 }
 
 .subscribe-button {
@@ -767,6 +778,7 @@ ul {
   border: none;
   display: flex;
   flex-wrap: wrap;
+  gap: 2px;
   padding: 0;
   margin: 0;
 }
@@ -827,15 +839,15 @@ ul {
 .control-min {
   width: 143px;
   height: 48px;
-  background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
   padding-right: 5px;
-  border: 2px solid;
-}
+  font-family: "PT Sans";
+  border: none;
+  }
 
 .control-min:focus {
   outline: none;
@@ -853,14 +865,14 @@ ul {
 .control-max {
   width: 143px;
   height: 48px;
-  background-color: #f2f2f2;
   border-radius: 0 4px 4px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
-  border: 2px solid;
-}
+  font-family: "PT Sans";
+  border: none;
+  }
 
 .control-max:focus {
   outline: none;
@@ -898,6 +910,7 @@ ul {
   border: 1px solid #82b3d3;
   border-radius: 4px;
   cursor: pointer;
+  font-family: "PT Sans"
 }
 
 .filter-button-submit {
@@ -938,6 +951,7 @@ ul {
   border: none;
   background-color: inherit;
   cursor: pointer;
+  font-family: "PT Sans"
 }
 
 .filter-button-reset {
@@ -995,6 +1009,7 @@ ul {
   padding-left: 20px;
   padding-right: 131px;
   margin-right: 72px;
+  font-family: "PT Sans";
 }
 
 .select-price {
@@ -1153,7 +1168,8 @@ ul {
   padding-left: 0;
   margin: 0;
   border-bottom: 1px solid #e5e5e5;
-}
+  padding-bottom: 30px;
+  }
 
 .hotel-card-link {
   text-decoration: none;
@@ -1191,6 +1207,7 @@ ul {
   text-decoration: none;
   margin: 0;
   cursor: pointer;
+  font-family: "PT Sans";
 }
 
 .button-info {
@@ -1235,7 +1252,7 @@ ul {
   text-decoration: none;
   margin: 0;
   cursor: pointer;
-  font-family: "PT-Sans";
+  font-family: "PT Sans";
 }
 
 .button-favorite {
@@ -1279,7 +1296,7 @@ ul {
   text-decoration: none;
   margin: 0;
   cursor: pointer;
-  font-family: "PT-Sans";
+  font-family: "PT Sans";
 }
 
 .button-favorite-current {
@@ -1368,6 +1385,7 @@ ul {
   vertical-align: top;
   margin: 0;
   align-items: center;
+  font-family: "PT Sans";
 }
 
 .pagination-link {
@@ -1387,6 +1405,7 @@ ul {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  font-family: "PT Sans";
 }
 
 .pagination-link {
@@ -1394,13 +1413,17 @@ ul {
 }
 
 .pagination-link:hover {
+  outline: none;
   background-color: #68A2CA;
   text-decoration: none;
+  border: 1px solid #82B3D3;
 }
 
 .pagination-link:focus {
+  outline: none;
   background-color: #68A2CA;
   text-decoration: none;
+  border: 1px solid #82B3D3;
 }
 
 .pagination-link:active {
@@ -1425,6 +1448,7 @@ ul {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  font-family: "PT Sans";
 }
 
 .pagination-dote {
@@ -1440,4 +1464,5 @@ ul {
   min-width: 60px;
   align-items: center;
   justify-content: center;
+  font-family: "PT Sans";
 }
