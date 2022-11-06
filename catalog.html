@@ -78,6 +78,7 @@
 
           <header class="inner-header-title ">
             <h1 class="main-inner-header">Гостиницы Седоны</h1>
+
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a href="index.html" class="breadcrumbs-home"><svg width="13" height="13" fill="none"
@@ -86,11 +87,6 @@
                     <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" fill="#fff" />
                   </svg><span class="visually-hidden">На главную страницу</span></a>
               </li>
-              <li class="breadcrumbs-item"><svg width="8" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M6.92 4.97 2.17.72c-.25-.25-.75-.25-1.13 0-.37.25-.25.75 0 1l4.13 3.75-4 3.75a.76.76 0 0 0 0 1c0 .12.37.25.5.25.12 0 .37-.13.5-.25l4.75-4.25a.59.59 0 0 0 0-1Z"
-                    fill="#fff" />
-                </svg></li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
               </li>
@@ -105,20 +101,23 @@
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="pools" checked>
-                    Бассейн
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label>
-                    <input class="control-input" type="checkbox" name="parking" checked>
-                    Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="pools" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="Wi-Fi">
-                    Wi-Fi
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -129,20 +128,24 @@
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-radio" name="group" type="radio" value="hotel" checked>
-                    Гостиница
+                    <input class="visually-hidden control-input" name="group" type="radio" value="hotel" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-radio" name="group" type="radio" value="motel">
-                    Мотель
+                    <input class="visually-hidden control-input" name="group" type="radio" value="motel">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
+
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-radio" name="group" type="radio" value="apartment">
-                    Апартаменты
+                    <input class="visually-hidden control-input" name="group" type="radio" value="apartment">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -150,22 +153,26 @@
 
             <fieldset class="filter-price">
               <legend class="filter-legend">Стоимость, ₽:</legend>
-
               <div class="filter-number">
-                <label class="control-label" for="label-min">от</label>
-                <input class="control-min" type="number" name="min" value="0" id="label-min">
+                <label class="control-price-label" for="label-min">от</label>
+                <input class="control-min input-price" type="number" name="min" value="0" id="label-min">
               </div>
-
               <div class="filter-number">
-                <label class="control-label" for="label-max">до</label>
-                <input class="control-max" type="number" name="max" value="9000" id="label-max">
+                <label class="control-price-label" for="label-max">до</label>
+                <input class="control-max input-price" type="number" name="max" value="9000" id="label-max">
               </div>
-
-              <div class="range-wrapper-inputs">
-                <label for="catalog-filter-label"></label>
-                  <input class="range-input" type="range" min="0" max="9000" value="7000" id="catalog-filter-label">
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
               </div>
-
             </fieldset>
 
             <div class="filter-buttons">
@@ -350,6 +357,52 @@
         </section>
       </footer>
     </div>
-  </body>
 
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+
+        <section class="modal-content">
+
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+
+            <p class="field-group">
+              <label class="modal-date" for="date-in">Дата заезда: <span class="modal-mark"></span></label>
+              <input class="field" type="text" id="date-in" name="date" placeholder="27 апреля 2020">
+            </p>
+            <span class="modal-label modal-red">Мы не можем отправить вас в прошлое.</span>
+
+            <p class="field-group">
+              <label class="modal-date" for="date-out">Дата выезда:<span class="modal-mark"></span></label>
+              <input class="field" type="text" id="date-out" name="date" placeholder="1 сентября 2023">
+            </p>
+            <span class="modal-label">На эти даты есть свободные номера. Пока есть.</span>
+
+            <div class="modal-number-container">
+             <p class="field-group">
+              <label class="modal-number" for="date-out">Взрослые:</label>
+              <button class="button-minus" type="button"></button>
+              <input class="field-number" type="number" id="date-out" value="2" name="adults">
+              <button class="button-plus" type="button"></button>
+             </p>
+
+             <p class="field-group">
+              <label class="modal-number" for="date-out">Дети:</label>
+              <button class="button-minus" type="button"></button>
+              <input class=" field-number" type="number" id="date-out" value="2" name="childrens">
+              <button class="button-plus" type="button"></button>
+             </p>
+
+            </div>
+            <button class="modal-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>
