@@ -480,6 +480,7 @@ ul {
   padding-left: 20px;
   margin-left: auto;
   font-family: "PT Sans";
+  background-color: #f2f2f2;
 }
 
 .subscribe-button {
@@ -905,6 +906,7 @@ ul {
   padding-right: 5px;
   font-family: "PT Sans";
   border: 2px solid #ffffff;
+  background-color: #f2f2f2;
 }
 
 .control-min:focus {
@@ -930,6 +932,7 @@ ul {
   padding-left: 20px;
   font-family: "PT Sans";
   border: 2px solid #ffffff;
+  background-color: #f2f2f2;
 }
 
 .control-max:focus {
@@ -1232,9 +1235,11 @@ ul {
 
 .hotel-table {
   display: grid;
-  gap: 10px;
+  gap: 16px;
   grid-template-columns: 142px 142px;
   justify-content: start;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-header {
@@ -1247,6 +1252,11 @@ ul {
   margin: 0;
   padding-top: 16px;
   padding-bottom: 16px;
+  padding-right: 0;
+}
+
+.hotel-card-image {
+  margin: 0;
 }
 
 .hotel-card-list {
@@ -1261,12 +1271,14 @@ ul {
 
 .hotel-card-link {
   text-decoration: none;
+  margin-right: 0;
 }
 
 .hotel-card-item {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 19px;
+  margin: 0;
 }
 
 .product-name {
@@ -1324,6 +1336,7 @@ ul {
 }
 
 .button-favorite {
+  width: 140px;
   background-color: #82b3d3;
   color: #ffffff;
   text-align: center;
@@ -1412,6 +1425,7 @@ ul {
 }
 
 .button-rate {
+  width: 140px;
   background-color: #f2f2f2;
   color: #333333;
   text-align: center;
@@ -1421,17 +1435,16 @@ ul {
   line-height: 20px;
   text-transform: uppercase;
   padding-top: 8px;
-  padding-left: 22px;
-  padding-right: 22px;
   padding-bottom: 8px;
   border: 1px;
   border-radius: 4px;
   text-decoration: none;
+  margin: 0;
+  vertical-align: top;
 }
 
 .button-stars-four {
   width: 140px;
-  height: 37px;
   background-image: url(../images/four_stars.svg);
   background-repeat: no-repeat;
   margin: 0;
@@ -1439,7 +1452,6 @@ ul {
 
 .button-stars-three {
   width: 140px;
-  height: 37px;
   background-image: url(../images/three_stars.svg);
   background-repeat: no-repeat;
   margin: 0;
@@ -1447,7 +1459,6 @@ ul {
 
 .button-stars-two {
   width: 140px;
-  height: 37px;
   background-image: url(../images/two_stars.svg);
   background-repeat: no-repeat;
   margin: 0;
@@ -1592,6 +1603,10 @@ ul {
   cursor: pointer;
 }
 
+.modal-close-button:focus {
+  outline: 3px solid #83b3d3;
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -1601,10 +1616,6 @@ ul {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-}
-
-::placeholder {
-  color: #000000;
 }
 
 .auth-form .field-group {
@@ -1626,11 +1637,30 @@ ul {
   padding-bottom: 12px;
   padding-left: 20px;
   font-family: "PT Sans";
-  border: none;
+  border: 2px solid #f2f2f2;
   background: #f2f2f2;
   border-radius: 4px;
 }
 
+.field  {
+  transition: background-color 0.2s;
+}
+
+.field:hover {
+  color: #000000;
+  opacity: 0.6;
+}
+
+.field:focus {
+  outline: none;
+  border: 2px solid #82B3D3;
+}
+
+.field:active {
+  outline: none;
+  border: 2px solid #000000;
+  opacity: 1;
+}
 .modal-date {
   position: relative;
 }
@@ -1649,7 +1679,7 @@ ul {
 
 .field-number {
   outline: none;
-  width: 30px;
+  width: 110px;
   height: 46px;
   font-weight: 700;
   font-size: 18px;
@@ -1657,32 +1687,55 @@ ul {
   text-align: center;
   font-family: "PT Sans";
   border: none;
+  border-radius: 4px;
   background: #f2f2f2;
 }
 
+.number-container {
+  position: relative;
+}
+
 .button-plus {
-  width: 30px;
-  height: 48px;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  background-image: url(../images/button-plus.svg);
-  background-position: center;
-  background-repeat: no-repeat;
+  outline: none;
+  position: absolute;
+  top: 14px;
+  right: 17px;
+  width: 20px;
+  height: 20px;
+  border:none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 .button-minus {
-  width: 30px;
-  height: 48px;
-  border: none;
-  border-radius: 4px 0 0 4px;
-  background-image: url(../images/button-minus.svg);
-  background-position: center;
-  background-repeat: no-repeat;
+  outline: none;
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  border:none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.modal-button {
+.modal-button:hover svg {
+  fill:  #000000;
+  fill-opacity:1;
+}
+
+.modal-button:focus svg {
+  border-radius: 4px;
+  outline: 2px solid #82B3D3;
+}
+
+.modal-button:active svg{
+  fill:  #000000;
+  fill-opacity: 0.3;
+}
+
+
+.modal-button-search {
   width: 577px;
   background-color: #82b3d3;
   color: #ffffff;
@@ -1702,19 +1755,94 @@ ul {
   font-family: "PT Sans";
 }
 
+.modal-button-search {
+  transition: background-color 0.2s;
+}
+
+.modal-button-search:hover {
+  background-color: #68a2ca;
+}
+
+.modal-button-search:focus {
+  outline: none;
+  background-color: #68a2ca;
+}
+
+.modal-button-search:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82b3d3;
+}
+
+.modal-info {
+  display: block;
+  position: absolute;
+  top: 402px;
+  right: 238px;
+  border-radius: 50%;
+  background-image: url(../images/symbol_i.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 26px;
+  height: 26px;
+  background-color: #83b3d3;
+  cursor: pointer;
+}
+
+/* Popover */
+.popover__content {
+  opacity: 0;
+  position: absolute;
+  top: 390px;
+  right: 280px;
+}
+
+.popover__wrapper:hover .popover__content {
+  opacity: 1;
+}
+
 .modal-mark-info {
   position: absolute;
-  top: 40px;
-  left: -80px;
-  padding: 15px 18px;
+  top: 56px;
+  left: -87px;
+  padding: 10px;
   width: 240px;
   color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-align:start;
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal-triangle {
+  position: absolute;
+  margin: 0;
+  top: 36px;
+  left: 22px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #333333;
+}
+
+.cart-item-title {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #242424;
+  text-transform: uppercase;
+}
+
+.cart-item-price {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #af7842;
 }
 
 .modal-label {
@@ -1727,7 +1855,7 @@ ul {
   margin-bottom: 40px;
 }
 
-.modal-red {
+.modal-error {
   color: #ff5757;
 }
 
@@ -1748,6 +1876,6 @@ ul {
   margin-bottom: 40px;
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */

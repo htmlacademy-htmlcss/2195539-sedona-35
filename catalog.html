@@ -164,10 +164,10 @@
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -211,7 +211,7 @@
                 <button class="button-info" type="button">ПОДРОБНЕЕ</button>
                 <button class="button-favorite" type="button">В ИЗБРАННОЕ</button>
                 <p class="button-stars-four"><span class=" visually-hidden">Четыре звезды</span></p>
-                <p><span class="button-rate">РЕЙТИНГ: 8,5</span></p>
+                <p class="button-rate">РЕЙТИНГ: 8,5</p>
               </div>
 
             </li>
@@ -229,7 +229,7 @@
                 <button class="button-favorite-current" type="button">В
                   ИЗБРАННОЕ</button>
                 <p class="button-stars-four"><span class=" visually-hidden">Четыре звезды</span></p>
-                <p><span class="button-rate">РЕЙТИНГ: 9,2</span></p>
+                <p class="button-rate">РЕЙТИНГ: 9,2</p>
               </div>
             </li>
 
@@ -245,7 +245,7 @@
                 <button class="button-info" type="button">ПОДРОБНЕЕ</button>
                 <button class="button-favorite" type="button">В ИЗБРАННОЕ</button>
                 <p class="button-stars-three"><span class="visually-hidden">Три звезды</span></p>
-                <p><span class="button-rate">РЕЙТИНГ: 6,9</span></p>
+                <p class="button-rate">РЕЙТИНГ: 6,9</p>
               </div>
             </li>
 
@@ -261,7 +261,7 @@
                 <button class="button-info" type="button">ПОДРОБНЕЕ</button>
                 <button class="button-favorite" type="button">В ИЗБРАННОЕ</button>
                 <p class="button-stars-two"><span class="visually-hidden">Две звезды</span></p>
-                <p><span class="button-rate">РЕЙТИНГ: 5,0</span></p>
+                <p class="button-rate">РЕЙТИНГ: 5,0</p>
               </div>
             </li>
           </ul>
@@ -356,54 +356,6 @@
             </svg> </a>
         </section>
       </footer>
-    </div>
-
-    <div class="modal-container modal-container-close">
-      <div class="modal modal-auth">
-
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-
-        <section class="modal-content">
-
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-
-          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-
-            <p class="field-group">
-              <label class="modal-date" for="date-in">Дата заезда: <span class="modal-mark"></span></label>
-              <input class="field" type="text" id="date-in" name="date" placeholder="27 апреля 2020">
-            </p>
-            <span class="modal-label modal-red">Мы не можем отправить вас в прошлое.</span>
-
-            <p class="field-group">
-              <label class="modal-date" for="date-out">Дата выезда:<span class="modal-mark"></span></label>
-              <input class="field" type="text" id="date-out" name="date" placeholder="1 сентября 2023">
-            </p>
-            <span class="modal-label">На эти даты есть свободные номера. Пока есть.</span>
-
-            <div class="modal-number-container">
-             <p class="field-group">
-              <label class="modal-number" for="date-out">Взрослые:</label>
-              <button class="button-minus" type="button"></button>
-              <input class="field-number" type="number" id="date-out" value="2" name="adults">
-              <button class="button-plus" type="button"></button>
-             </p>
-
-             <p class="field-group">
-              <label class="modal-number" for="date-out">Дети: <span class="modal-mark-info">Укажите количество детей, <br> которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span></label>
-              <button class="button-minus" type="button"></button>
-              <input class=" field-number" type="number" id="date-out" value="2" name="childrens">
-              <button class="button-plus" type="button"></button>
-             </p>
-
-            </div>
-            <button class="modal-button" type="submit">Найти</button>
-
-          </form>
-        </section>
-      </div>
     </div>
   </body>
 </html>
