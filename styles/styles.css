@@ -1828,7 +1828,7 @@ body {
 .modal-info {
   position: absolute;
   top: 12px;
-  left: 60px;
+  left: 48px;
   border-radius: 50%;
   background-image: url(../images/symbol_i.svg);
   background-repeat: no-repeat;
@@ -1841,8 +1841,8 @@ body {
 
 .modal-mark-info {
   position: absolute;
-  top: 56px;
-  left: -77px;
+  top: 14px;
+  left: -88px;
   padding: 10px;
   width: 240px;
   color: #ffffff;
@@ -1863,8 +1863,8 @@ body {
 .modal-triangle {
   position: absolute;
   margin: 0;
-  top: 36px;
-  left: 40px;
+  top: -5px;
+  left: 29px;
   border: 10px solid transparent;
   border-bottom: 10px solid #333333;
 }
@@ -1895,7 +1895,7 @@ body {
   line-height: 21px;
   margin-left: 175px;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 21px;
 }
 
 .modal-error {
@@ -1922,7 +1922,7 @@ body {
 
 /* Popover */
 .popover__content {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   top: 390px;
   right: 280px;
@@ -1932,6 +1932,6 @@ body {
   opacity: 1;
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
