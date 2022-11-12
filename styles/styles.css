@@ -97,7 +97,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   max-width: 310px;
-  gap: 20px;
+  gap: 16px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -131,14 +131,9 @@ body {
   background: #7db54f;
   clip-path: circle(46%);
   color: #fff;
-
   top: -15px;
   right: 11px;
   padding: 3px;
-}
-
-.navigation-link-heart {
-  width: 18px;
 }
 
 .navigation-link-search:hover svg {
@@ -757,6 +752,7 @@ body {
 .breadcrumbs {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   color: #ffffff;
   font-weight: 400;
   font-size: 16px;
@@ -829,6 +825,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  padding-left: 5px;
 }
 
 .filter-legend {
@@ -988,7 +985,7 @@ body {
 .control-max {
   max-width: 143px;
   height: 48px;
-  border-radius: 4px 0 0 4px;
+  border-radius:   0 4px 4px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1153,13 +1150,13 @@ body {
 }
 
 .catalog {
-  padding: 50px 70px;
+  padding: 50px 70px 61px 70px;
 }
 
 .select {
   position: relative;
   display: flex;
-
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -1560,7 +1557,7 @@ body {
   display: flex;
   justify-content: flex-start;
   gap: 8px;
-  width: 660px;
+  min-width: 660px;
   padding-left: 0;
   vertical-align: top;
   margin: 0;
@@ -1938,6 +1935,6 @@ display:block;
   align-items: center;
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
