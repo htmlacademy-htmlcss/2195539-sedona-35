@@ -133,8 +133,8 @@ body {
   background: #7db54f;
   clip-path: circle(46%);
   color: #fff;
-  top: -15px;
-  right: -12px;
+  top: -13px;
+  right: -8px;
   padding: 7px;
 }
 
@@ -1319,6 +1319,7 @@ body {
   padding-top: 10px;
   padding-bottom: 16px;
   padding-right: 0;
+  max-width: 300px;
 }
 
 .hotel-card-image {
@@ -1922,8 +1923,7 @@ body {
 .modal-number-container {
   display: grid;
   grid-template-columns: 5, 1fr;
-  grid-template-areas:
-    "a b c  d e";
+  grid-template-areas:"a b c d e";
   margin-bottom: 38px;
 }
 
