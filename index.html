@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Главная страница</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -269,7 +270,7 @@
       </footer>
     </div>
 
-    <!-- Modal_windows -->
+    <!-- Modal_window -->
 
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
@@ -297,8 +298,9 @@
 
             <div class="modal-number-container">
 
-              <label class="modal-number" for="adult">Взрослые:</label>
-              <div class="number-container">
+             <div class="item-1"> <label class="modal-number" for="adult">Взрослые:</label></div>
+
+              <div class="number-container item-2">
                 <button class="modal-button button-minus" type="button"><svg width="20" height="20" viewBox="0 0 20 20"
                     fill="#756157" fill-opacity=".3">
                     <path d="M3 9v2h14V9H3Z" />
@@ -312,24 +314,23 @@
                 </button>
               </div>
 
-              <span>
-                <label class="modal-number" for="child">Дети:</label>
-                <span class="tooltip">
-                  <button class="modal-info" type="button" aria-labelledby="modal-popover"></button>
 
+              <div class="item-3"> <label class="modal-number" for="child">Дети:</label></div>
+
+               <div class="item-4"><span class="tooltip">
+                  <button class="modal-info" type="button" aria-labelledby="modal-popover"></button>
                   <span class="modal-mark-info" role="tooltip" id="modal-popover"><span class="modal-triangle"></span>
                   Укажите количество детей, <br> которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                    </span>
                 </span>
-              </span>
+              </div>
 
-              <div class="number-container">
+              <div class="number-container item-5">
                 <button class="modal-button button-minus" type="button"><svg width="20" height="20" viewBox="0 0 20 20"
                     fill="#756157" fill-opacity=".3">
                     <path d="M3 9v2h14V9H3Z" />
                   </svg>
                 </button>
-
                 <input class=" field-number" type="number" id="child" value="2" name="childrens">
                 <button class="modal-button button-plus" type="button"><svg width="20" height="20" viewBox="0 0 20 20"
                     fill="#756157" fill-opacity=".3" xmlns="http://www.w3.org/2000/svg">
