@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>Главная страница</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
   </head>
-
   <body>
     <div class="container">
       <header class="page-header" data-test="header">
@@ -67,8 +65,7 @@
             <li class="navigation-item-user">
               <span class="visually-hidden">Иконка избранное</span>
               <a class="navigation-link-heart">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"
                     fill="#000" />
@@ -131,6 +128,7 @@
                 </p>
               </div>
             </li>
+
             <li class="advantages-item advantages-bridge">
               <img class="advantages-img" src="images/photo-mountain.jpg" width="800" height="384" alt="Красивые горы">
               <div class="advantages-container">
@@ -140,6 +138,7 @@
                 </p>
               </div>
             </li>
+
           </ul>
         </section>
         <section class="advantages-plus">
@@ -271,7 +270,6 @@
     </div>
 
     <!-- Modal_window -->
-
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
         <button class="modal-close-button">
@@ -280,26 +278,19 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-
             <p class="field-group">
               <label class="modal-date" for="date-in">Дата Заезда: <span class="modal-mark"></span></label>
               <input class="field" type="text" id="date-in" name="date" value="27 апреля 2020"
                 placeholder="Укажите дату">
             </p>
             <span class="modal-label modal-error">Мы не можем отправить вас в прошлое.</span>
-
             <p class="field-group">
               <label class="modal-date" for="date-out">Дата Выезда:<span class="modal-mark"></span></label>
               <input class="field" type="text" id="date-out" name="date" value="1 сентября 2023"
-                placeholder="Укажите дату">
-            </p>
+                placeholder="Укажите дату">            </p>
             <span class="modal-label">На эти даты есть свободные номера. Пока есть.</span>
-
-
             <div class="modal-number-container">
-
-             <div class="item-1"> <label class="modal-number" for="adult">Взрослые:</label></div>
-
+              <div class="item-1"> <label class="modal-number" for="adult">Взрослые:</label></div>
               <div class="number-container item-2">
                 <button class="modal-button button-minus" type="button"><svg width="20" height="20" viewBox="0 0 20 20"
                     fill="#756157" fill-opacity=".3">
@@ -313,18 +304,15 @@
                   </svg>
                 </button>
               </div>
-
-
               <div class="item-3"> <label class="modal-number" for="child">Дети:</label></div>
-
-               <div class="item-4"><span class="tooltip">
+              <div class="item-4"><span class="tooltip">
                   <button class="modal-info" type="button" aria-labelledby="modal-popover"></button>
                   <span class="modal-mark-info" role="tooltip" id="modal-popover"><span class="modal-triangle"></span>
-                  Укажите количество детей, <br> которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                   </span>
+                    Укажите количество детей, <br> которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                    размещаются бесплатно.
+                  </span>
                 </span>
               </div>
-
               <div class="number-container item-5">
                 <button class="modal-button button-minus" type="button"><svg width="20" height="20" viewBox="0 0 20 20"
                     fill="#756157" fill-opacity=".3">
@@ -338,12 +326,9 @@
                   </svg>
                 </button>
               </div>
-
             </div>
             <button class="modal-button-search" type="submit">Найти</button>
           </form>
-
-
         </section>
       </div>
     </div>
