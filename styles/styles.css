@@ -53,7 +53,7 @@ body {
 }
 
 .navigation {
-   display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -709,7 +709,7 @@ body {
   fill: rgba(104, 162, 202, 0.3);
 }
 
-/* ------------------------Catalog--------------------------- */
+/* -------------Catalog---------- */
 
 /* Main catalog*/
 .main-inner {
