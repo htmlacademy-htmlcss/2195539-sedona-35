@@ -53,7 +53,7 @@ body {
 }
 
 .navigation {
-  display: flex;
+   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -97,9 +97,10 @@ body {
   flex-wrap: wrap;
   align-items: center;
   max-width: 310px;
-  gap: 16px;
+  gap: 27px;
   padding: 0;
   margin: 0;
+  margin-top: 2px;
   list-style: none;
 }
 
@@ -121,10 +122,11 @@ body {
   vertical-align: top;
   text-decoration: none;
   text-transform: capitalize;
+  padding-bottom: 18px;
 }
 
 .navigation-link-like {
-  position: relative;
+  position: absolute;
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
@@ -132,12 +134,17 @@ body {
   clip-path: circle(46%);
   color: #fff;
   top: -15px;
-  right: 11px;
-  padding: 3px;
+  right: -12px;
+  padding: 7px;
 }
 
 .navigation-link-search:hover svg {
   opacity: 50%;
+}
+
+.navigation-link-heart {
+  position: relative;
+  text-decoration: none;
 }
 
 .navigation-link-heart:hover svg {
@@ -505,7 +512,7 @@ body {
 .subscribe-email {
   width: 452px;
   height: 52px;
-  border: none;
+  border: 2px solid #f2f2f2;
   border-radius: 4px 0 0 4px;
   font-weight: 400;
   font-size: 18px;
@@ -514,6 +521,11 @@ body {
   margin-left: auto;
   font-family: "PT Sans";
   background-color: #f2f2f2;
+}
+
+.subscribe-email:focus {
+  border: 2px solid #83b3d3;
+  outline: none;
 }
 
 .subscribe-button {
@@ -564,7 +576,6 @@ body {
   text-decoration: none;
   margin: 0;
   display: flex;
-
   justify-content: space-between;
   padding-left: 84px;
   padding-right: 70px;
@@ -575,7 +586,6 @@ body {
 
 .footer-social-list {
   display: flex;
-
   gap: 26px;
   padding-left: 0;
   margin: 0;
@@ -1957,11 +1967,13 @@ body {
 }
 
 /* Modal_ON/OFF */
+
 .modal-container-close {
   display: none;
 }
 
-/*Hidden*/
+/*Vissually_Hidden*/
+
 .visually-hidden {
   position: absolute;
   width: 1px;
