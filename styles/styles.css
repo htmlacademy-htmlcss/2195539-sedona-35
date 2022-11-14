@@ -63,7 +63,7 @@ body {
 }
 
 .navigation-item {
-  padding: 20px 16px;
+  padding: 19px 16px;
 }
 
 .navigation-logo {
@@ -135,7 +135,7 @@ body {
   color: #fff;
   top: -13px;
   right: -8px;
-  padding: 7px;
+  padding: 5px;
 }
 
 .navigation-link-search:hover svg {
