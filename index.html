@@ -13,7 +13,8 @@
       <header class="page-header" data-test="header">
         <nav class="navigation">
           <span class="visually-hidden">Логотип.</span>
-          <a class="navigation-logo"><svg width="140" height="70" viewBox="0 0 140 70" fill="none">
+          <a class="navigation-logo">
+            <svg width="140" height="70" viewBox="0 0 140 70" fill="none">
               <g clip-path="url(#a)">
                 <path d="M140 0H0l60.36 65.7c5.28 5.8 14 5.8 19.28 0L140 0Z" fill="#81B3D3" />
                 <path d="M37.23.5 69.8 38.4 102.26.7 37.23.5Z" fill="#23A9E1" />
@@ -91,20 +92,17 @@
           </div>
           <p class="hero-description">Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</p>
         </section>
-
         <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Причины приехать в Седону</h2>
           <p class="advantages-title">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <ul class="advantages-list">
             <li class="advantages-item advantages-city">
-
               <div class="advantages-container">
                 <h3 class="advantages-header-white">Настоящий городок</h3>
                 <p class="advantages-description">
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
               </div>
-
               <img class="advantages-img" src="images/photo-house.jpg" width="800" height="384" alt="Красивые дома">
             </li>
             <li class="advantages-item advantages-square">
@@ -131,7 +129,6 @@
                 </p>
               </div>
             </li>
-
             <li class="advantages-item advantages-bridge">
               <img class="advantages-img" src="images/photo-mountain.jpg" width="800" height="384" alt="Красивые горы">
               <div class="advantages-container">
@@ -141,7 +138,6 @@
                 </p>
               </div>
             </li>
-
           </ul>
         </section>
         <section class="advantages-plus">
@@ -249,9 +245,10 @@
         </section>
       </footer>
     </div>
+
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
@@ -270,8 +267,8 @@
             </p>
             <span class="modal-label">На эти даты есть свободные номера. Пока есть.</span>
             <div class="modal-number-container">
-              <div class="item-1"> <label class="modal-number" for="adult">Взрослые:</label></div>
-              <div class="number-container item-2">
+              <div class="adults"> <label class="modal-number" for="adult">Взрослые:</label></div>
+              <div class="number-container number-adults">
                 <button class="modal-button button-minus" type="button">
                   <span class="visually-hidden">Уменьшить количество.</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="#756157" fill-opacity=".3">
@@ -287,8 +284,8 @@
                   </svg>
                 </button>
               </div>
-              <div class="item-3"> <label class="modal-number" for="child">Дети:</label></div>
-              <div class="item-4"><span class="tooltip">
+              <div class="childrens"> <label class="modal-number" for="child">Дети:</label></div>
+              <div class="childrens-rule"><span class="tooltip">
                   <span class="visually-hidden">Правило размещения детей.</span>
                   <button class="modal-info" type="button" aria-labelledby="modal-popover"></button>
                   <span class="modal-mark-info" role="tooltip" id="modal-popover"><span class="modal-triangle"></span>
@@ -297,7 +294,7 @@
                   </span>
                 </span>
               </div>
-              <div class="number-container item-5">
+              <div class="number-container number-childrens">
                 <button class="modal-button button-minus" type="button">
                   <span class="visually-hidden">Уменьшить количество.</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="#756157" fill-opacity=".3">
