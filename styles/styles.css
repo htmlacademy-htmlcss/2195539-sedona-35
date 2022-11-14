@@ -1805,6 +1805,8 @@ body {
 }
 
 .modal-button:focus svg {
+  fill: #000000;
+  fill-opacity: 1;
   border-radius: 4px;
   outline: 2px solid #82b3d3;
 }
@@ -1982,9 +1984,9 @@ body {
 
 /* Modal_ON/OFF */
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 /*Vissually_Hidden*/
 
