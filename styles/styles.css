@@ -78,6 +78,7 @@ body {
 
 .navigation-logo {
   align-self: flex-start;
+  flex-wrap: wrap;
   margin-bottom: -80px;
   padding: 0;
   z-index: 1;
@@ -330,7 +331,9 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  justify-content: center;
 }
 
 
@@ -501,6 +504,7 @@ body {
 /* Subscribe */
 .subscribe-form {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .subscribe {
@@ -599,6 +603,7 @@ body {
   text-decoration: none;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 84px;
   padding-right: 70px;
@@ -609,6 +614,7 @@ body {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 26px;
   padding-left: 0;
   margin: 0;
@@ -817,11 +823,13 @@ body {
 
 .filter-houses {
   display: flex;
+  flex-wrap: wrap;
   gap: 48px;
 }
 
 .filter-prices {
   display: flex;
+  flex-wrap: wrap;
   gap: 64px;
 }
 
@@ -1139,6 +1147,7 @@ input[type=number] {
 
 .catalog-header-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 40px;
   align-items: center;
@@ -1528,6 +1537,7 @@ input[type=number] {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   gap: 8px;
   min-width: 660px;
@@ -1543,7 +1553,7 @@ input[type=number] {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  display: flex;
+  flex-wrap: wrap;
   color: #ffffff;
   background-color: #82b3d3;
   text-decoration: none;
@@ -1581,6 +1591,7 @@ input[type=number] {
 
 .pagination-current {
   display: flex;
+  flex-wrap: wrap;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -1599,6 +1610,7 @@ input[type=number] {
 
 .pagination-dote {
   display: flex;
+  flex-wrap: wrap;
   background-color: #ffffff;
   font-size: 22px;
   line-height: 26px;
@@ -1673,6 +1685,7 @@ input[type=number] {
 
 .modal-form .field-group {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   font-weight: 700;
@@ -1890,6 +1903,7 @@ input[type=number] {
 
 .number-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .modal-number-container {
