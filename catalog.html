@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>Страница каталога</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
   </head>
-
   <body>
     <div class="container">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <span class="visually-hidden">Логотип.</span>
-          <a class="navigation-logo" href="index.html"><svg width="140" height="70" fill="none">
+          <a class="navigation-logo" href="index.html"><span class="visually-hidden">Логотип.</span>
+            <svg width="140" height="70" fill="none">
+
               <g clip-path="url(#a)">
                 <path d="M140 0H0l60.36 65.7c5.28 5.8 14 5.8 19.28 0L140 0Z" fill="#81B3D3" />
                 <path d="M37.23.5 69.8 38.4 102.26.7 37.23.5Z" fill="#23A9E1" />
@@ -56,8 +55,8 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-item-user">
-              <span class="visually-hidden">Иконка поиска.</span>
               <a class="navigation-link-search" href="#">
+                <span class="visually-hidden">Поиск по сайту.</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"
@@ -66,8 +65,8 @@
               </a>
             </li>
             <li class="navigation-item-user">
-              <span class="visually-hidden">Иконка избранное.</span>
               <a class="navigation-link-heart" href="#">
+                <span class="visually-hidden">Добавить в избранное.</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"
@@ -97,13 +96,12 @@
               </li>
               <li class="breadcrumbs-item">
                 <span class="visually-hidden">Текущая страница Гостиницы.</span>
-                <a class="breadcrumbs-link">Гостиницы</a>
+                <a class="breadcrumbs-link" href="#">Гостиницы</a>
               </li>
             </ul>
           </header>
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="filter-houses">
-
               <fieldset class="filter-infrastructure">
                 <legend class="filter-legend">Инфраструктура:</legend>
                 <ul class="filter-list">
@@ -130,7 +128,6 @@
                   </li>
                 </ul>
               </fieldset>
-
               <fieldset class="filter-house">
                 <legend class="filter-legend">Тип Жилья:</legend>
                 <ul class="filter-list">
@@ -159,7 +156,6 @@
               </fieldset>
             </div>
             <div class="filter-prices">
-
               <fieldset class="filter-price">
                 <legend class="filter-legend">Стоимость, ₽:</legend>
                 <div class="filter-number">
@@ -331,7 +327,6 @@
       <footer class="page-footer" data-test="footer">
         <section class="footer-social">
           <h3 class="visually-hidden">Социальные сети.</h3>
-
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="vkontakte-button" href="https://vk.com/htmlacademy"><svg width="25" height="15" fill="none">
@@ -380,5 +375,4 @@
       </footer>
     </div>
   </body>
-
 </html>

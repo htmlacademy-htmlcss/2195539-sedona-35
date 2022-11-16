@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: > 2% and last 1 version
-*/
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -85,8 +78,10 @@ body {
 
 .navigation-logo {
   align-self: flex-start;
+  flex-wrap: wrap;
   margin-bottom: -80px;
   padding: 0;
+  z-index: 1;
 }
 
 .navigation-list {
@@ -99,9 +94,16 @@ body {
   padding-left: 16px;
   padding-right: 73px;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 2px;
   list-style: none;
 }
+
+.navigation-link:hover {
+ border-bottom: 2px solid #756157;
+  padding-bottom: 18px;
+}
+
+
 
 .navigation-link-current {
   border-bottom: 2px solid #756157;
@@ -139,7 +141,7 @@ body {
   vertical-align: top;
   text-decoration: none;
   text-transform: capitalize;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
 }
 
 .navigation-link-like {
@@ -149,7 +151,7 @@ body {
   line-height: 10px;
   background: #7db54f;
   -webkit-clip-path: circle(46%);
-          clip-path: circle(46%);
+  clip-path: circle(46%);
   color: #ffffff;
   top: -13px;
   right: -8px;
@@ -329,7 +331,9 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  justify-content: center;
 }
 
 
@@ -500,6 +504,7 @@ body {
 /* Subscribe */
 .subscribe-form {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .subscribe {
@@ -535,8 +540,9 @@ body {
 }
 
 .subscribe-email {
+  display: block;
   width: 452px;
-  height: 52px;
+  min-height: 52px;
   border: 2px solid #f2f2f2;
   border-radius: 4px 0 0 4px;
   font-weight: 400;
@@ -597,6 +603,7 @@ body {
   text-decoration: none;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 84px;
   padding-right: 70px;
@@ -607,6 +614,7 @@ body {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 26px;
   padding-left: 0;
   margin: 0;
@@ -781,6 +789,11 @@ body {
   content: none;
 }
 
+.breadcrumbs-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .filter-legend {
   font-weight: 700;
   font-size: 20px;
@@ -803,18 +816,20 @@ body {
 
 .filter-form {
   display: flex;
-
-  gap: 136px;
+  flex-wrap: wrap;
+  gap: 135px;
   margin: 0;
 }
 
 .filter-houses {
   display: flex;
+  flex-wrap: wrap;
   gap: 48px;
 }
 
 .filter-prices {
   display: flex;
+  flex-wrap: wrap;
   gap: 64px;
 }
 
@@ -825,7 +840,6 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  padding-left: 5px;
 }
 
 .filter-infrastructure {
@@ -937,12 +951,12 @@ body {
 .input-price::-webkit-outer-spin-button,
 .input-price::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
 input[type=number] {
-  -moz-appearance:textfield;
+  -moz-appearance: textfield;
 }
 
 .control-price-label {
@@ -1055,7 +1069,7 @@ input[type=number] {
 
 .filter-button-submit {
   width: 191px;
-  height: 36px;
+  min-height: 36px;
   background-color: #82b3d3;
   color: #ffffff;
   font-weight: 700;
@@ -1094,7 +1108,7 @@ input[type=number] {
 .filter-button-reset {
   display: inline-block;
   width: 191px;
-  height: 50px;
+  min-height: 50px;
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
@@ -1133,6 +1147,7 @@ input[type=number] {
 
 .catalog-header-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 40px;
   align-items: center;
@@ -1151,7 +1166,7 @@ input[type=number] {
 
 .select-price {
   width: 294px;
-  height: 48px;
+  min-height: 48px;
   font-size: 18px;
   line-height: 21px;
   border: 2px solid #e5e5e5;
@@ -1164,7 +1179,7 @@ input[type=number] {
   background-repeat: no-repeat;
   background-position: right 20px center;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   transition: color 0.2s;
 }
 
@@ -1197,7 +1212,7 @@ input[type=number] {
   border: 2px solid #000000;
   text-decoration: none;
   width: 48px;
-  height: 48px;
+  min-height: 48px;
   border-radius: 4px;
   margin: 0;
   vertical-align: top;
@@ -1227,7 +1242,7 @@ input[type=number] {
   background-position: center;
   background-color: #ffffff;
   width: 48px;
-  height: 48px;
+  min-height: 48px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   margin: 0;
@@ -1258,7 +1273,7 @@ input[type=number] {
   background-position: center;
   background-color: #ffffff;
   width: 48px;
-  height: 48px;
+  min-height: 48px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   vertical-align: top;
@@ -1522,6 +1537,7 @@ input[type=number] {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   gap: 8px;
   min-width: 660px;
@@ -1537,7 +1553,7 @@ input[type=number] {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  display: flex;
+  flex-wrap: wrap;
   color: #ffffff;
   background-color: #82b3d3;
   text-decoration: none;
@@ -1575,6 +1591,7 @@ input[type=number] {
 
 .pagination-current {
   display: flex;
+  flex-wrap: wrap;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -1593,6 +1610,7 @@ input[type=number] {
 
 .pagination-dote {
   display: flex;
+  flex-wrap: wrap;
   background-color: #ffffff;
   font-size: 22px;
   line-height: 26px;
@@ -1647,6 +1665,9 @@ input[type=number] {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
 .modal-close-button:focus {
   outline: 3px solid #83b3d3;
 }
@@ -1664,23 +1685,24 @@ input[type=number] {
 
 .modal-form .field-group {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   align-items: center;
-  padding-right:5px;
+  padding-right: 5px;
 }
 
 .field {
-  width: 443px;
+  width: 436px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 20px;
+  padding-left: 19px;
   font-family: inherit;
   border: 2px solid #f2f2f2;
   background: #f2f2f2;
@@ -1712,7 +1734,7 @@ input[type=number] {
   top: 4px;
   left: 540px;
   width: 16px;
-  height: 16px;
+  min-height: 16px;
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
@@ -1815,7 +1837,7 @@ input[type=number] {
   background-repeat: no-repeat;
   background-position: center;
   width: 26px;
-  height: 26px;
+  min-height: 26px;
   background-color: #83b3d3;
   cursor: pointer;
   border: none;
@@ -1835,7 +1857,6 @@ input[type=number] {
   position: absolute;
   top: 36px;
   left: -127px;
-  /* z-index: 1; */
   padding: 22px;
   width: 256px;
   color: #ffffff;
@@ -1876,12 +1897,13 @@ input[type=number] {
 .field-number::-webkit-outer-spin-button,
 .field-number::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
 .number-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .modal-number-container {
@@ -1891,8 +1913,6 @@ input[type=number] {
 }
 
 .adults {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: a;
   font-weight: 700;
   font-size: 20px;
@@ -1905,15 +1925,11 @@ input[type=number] {
 }
 
 .number-adults {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: b;
   justify-self: start;
 }
 
 .childrens {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: c;
   font-weight: 700;
   font-size: 20px;
@@ -1921,12 +1937,10 @@ input[type=number] {
   align-self: center;
   justify-self: end;
   margin-right: -17px;
-  padding-right:5px;
+  padding-right: 5px;
 }
 
 .childrens-rule {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
   grid-area: d;
   width: 20px;
   align-self: center;
@@ -1934,8 +1948,6 @@ input[type=number] {
 }
 
 .number-childrens {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
   grid-area: e;
   justify-self: end;
 }
@@ -1955,7 +1967,7 @@ input[type=number] {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
