@@ -97,6 +97,13 @@ body {
   list-style: none;
 }
 
+.navigation-link:hover {
+ border-bottom: 2px solid #756157;
+  padding-bottom: 18px;
+}
+
+
+
 .navigation-link-current {
   border-bottom: 2px solid #756157;
   padding-bottom: 18px;
@@ -1646,6 +1653,9 @@ input[type=number] {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
 .modal-close-button:focus {
   outline: 3px solid #83b3d3;
 }
