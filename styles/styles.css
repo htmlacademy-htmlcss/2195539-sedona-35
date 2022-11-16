@@ -810,8 +810,8 @@ body {
 
 .filter-form {
   display: flex;
-
-  gap: 136px;
+  flex-wrap: wrap;
+  gap: 135px;
   margin: 0;
 }
 
